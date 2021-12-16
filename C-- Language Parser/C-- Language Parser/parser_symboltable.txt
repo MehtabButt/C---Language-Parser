@@ -1,0 +1,14 @@
+numPrint	INT
+num	INT
+length	INT
+i	INT
+j	INT
+first	INT
+temp	INT
+a	CHAR
+b	CHAR
+c	CHAR
+intArr	INT
+charArr	CHAR
+iArr	INT
+cArr	CHAR

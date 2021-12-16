@@ -1,0 +1,87 @@
+program funcs
+funcs func funcs
+funcs ^
+func type VAR_DEC_OP ID OP params CP OB stmts return CB
+params type VAR_DEC_OP ID params_prime
+params ^
+params_prime COMMA params
+params_prime ^
+stmts stmt stmts
+stmts ^
+stmt ID stmt_prime2
+stmt_prime2 OSB NC CSB ASS_OP value SEMI_COLON
+stmt print
+stmt input
+stmt loop 
+stmt cond 
+stmt NC opr_prime rel opr SEMI_COLON
+dec type VAR_DEC_OP iden
+iden ID iden_prime
+iden_prime COMMA iden
+iden_prime SEMI_COLON
+ass ID ASS_OP value SEMI_COLON
+value ID value_prime
+value NC value_prime
+value LC
+value_prime T_prime ari_expr_prime
+ari_expr T ari_expr_prime
+ari_expr_prime + ari_expr
+ari_expr_prime - ari_expr 
+ari_expr_prime ^
+T F T_prime
+T_prime * T
+T_prime / T
+T_prime ^
+F ID
+F NC
+cond IF OP bool CP OB stmts CB cond_prime
+cond_prime ELSE OB stmts CB
+cond_prime ^
+bool opr rel opr
+opr ID opr_prime
+opr NC opr_prime
+opr LC
+opr_prime ari_expr_prime
+opr_prime ^
+rel <=
+rel >=
+rel <
+rel >
+rel ==
+rel /=
+open_bool ID opr_prime rel opr SEMI_COLON
+open_bool NC opr_prime rel opr SEMI_COLON
+open_bool LC rel opr SEMI_COLON
+print WRITE OP str CP SEMI_COLON
+str ID str_prime
+str STRING
+str NC T_prime ari_expr_prime
+str_prime ^
+str_prime T_prime ari_expr_prime
+input READ INP_OP ID SEMI_COLON
+loop WHILE OP bool CP OB stmts CB
+return RETURN value SEMI_COLON
+array type VAR_DEC_OP ID OSB array_prime2
+seq num
+seq lit
+num NC num_prime
+num_prime COMMA NC num_prime
+num_prime ^
+lit LC lit_prime
+lit_prime COMMA LC lit_prime
+lit_prime ^
+type INT
+type CHAR
+stmt_prime ASS_OP value SEMI_COLON
+stmt_prime opr_prime rel opr SEMI_COLON
+stmt LC rel opr SEMI_COLON
+value_prime ^
+array ID OSB NC CSB ASS_OP value SEMI_COLON
+array_prime SEMI_COLON
+array_prime ASS_OP OB seq CB SEMI_COLON
+array_prime2 NC CSB array_prime
+array_prime2 CSB ASS_OP OB seq CB SEMI_COLON
+stmt type VAR_DEC_OP ID stmt_prime3
+stmt_prime2 stmt_prime
+stmt_prime3 OSB array_prime2 
+stmt_prime3 iden_prime

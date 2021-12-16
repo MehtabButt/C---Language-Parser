@@ -1,0 +1,68 @@
+int: numPrint (int: num, int: length)
+{
+int: i, j, first, temp;
+char: a, b, c;
+
+a := 'x';
+b := a;
+j := 2;
+
+int: intArr[2];
+char: charArr[2];
+intArr[0] := 1;
+charArr := 'a';
+int: iArr[2] := {1, 2};
+char: cArr[] := {'a', 'b'};
+
+write( "enter number");
+write(i + 1);
+
+read >> i;
+
+i := length;
+
+while (i /= 0)
+{
+first := 0; /*this line contains a comment***/
+j := j * 1;
+
+while (j < i)
+{
+write(j);
+
+if (j == 0){
+j := j / 5;
+}
+else{
+j := 10;
+}
+
+}
+
+/* this is a comment */
+i := i - 1;
+
+/*This is a
+Multiline
+Comment*/
+}
+
+if (j <= i){
+
+write( "j is less than equal to i") ;
+
+}
+if (j >= i){
+
+write( "j is greater than equal to i") ;
+
+}
+if (j > i){
+
+write( "j is greater than i") ;
+
+}
+write (temp) ;
+
+return i;
+}

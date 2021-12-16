@@ -1,0 +1,16 @@
+Identifiers
+--------------------------
+numPrint
+num
+length
+i
+j
+first
+temp
+a
+b
+c
+intArr
+charArr
+iArr
+cArr
